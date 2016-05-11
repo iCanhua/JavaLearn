@@ -145,11 +145,11 @@ public class acxReader {
 	public static void main(String[] args) throws ParserConfigurationException, SAXException, IOException {
 		
 //        String inPath="C:/Users/FAN/Desktop/近来烦事/数据转换/数据转换/原始数据/SWNT3.acx";
-		String inPath="C:/Users/FAN/Desktop/近来烦事/数据转换/数据转换/原始数据/model5/";
+		String inPath="C:/Users/FAN/Desktop/近来烦事/数据转换/数据转换/原始数据/model6/";
         String outPath="C:/Users/FAN/Desktop/";
 //        acxReader acx=new acxReader();
 //        acx.parseAcxAtomByXYZ(inPath, outPath);
-        for(int i=64;i<=65;i++){
+        for(int i=25;i<=28;i++){
         	String tempPath=inPath+i+".acx";
         	String tempOut=outPath+"shape"+i+".gen";
         	acxReader acxt=new acxReader();
