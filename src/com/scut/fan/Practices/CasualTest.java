@@ -9,6 +9,8 @@ import com.scut.fan.DOM.acxReader;
 public class CasualTest {
 	
 	
+	
+	
 	interface C{
 		public String getUrl();
 	}
@@ -46,8 +48,17 @@ public class CasualTest {
 	}
 	
 	public static void main(String[] args) {
-		CasualTest aa=new CasualTest();
-		String a=new String("3");
-		System.out.println(aa);
+		Rect rect =new Rect();
+		Dbl w=new Dbl(),h=new Dbl();
+		w.setD(12.76);
+		h.setD(25.28);
+		rect.setHeight(h);
+		rect.setWidth(w);
+		System.out.println("矩形："+rect.getHeight()+"-"+rect.getWidth());
+		System.out.println("面积："+rect.getArea());
+		w.setD(100.0);
+		h.setD(256.0);
+		System.out.println("矩形："+rect.getHeight()+"-"+rect.getWidth());
+		
 	}
 }

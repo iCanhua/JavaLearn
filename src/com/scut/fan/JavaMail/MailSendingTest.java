@@ -19,7 +19,7 @@ import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
 import javax.swing.text.html.MinimalHTMLWriter;
 
-public class Mail {
+public class MailSendingTest {
 	
 	private MimeMessage mimeMsg;// MIME邮件对象
 	private Session session;// 邮件会话对象
@@ -37,7 +37,7 @@ public class Mail {
 	     *            邮件发�?服务�?
 	     */
 	
-	public Mail(String smtp){
+	public MailSendingTest(String smtp){
         setSmtpHost(smtp);
         createMimeMessage();		
 	}
@@ -267,7 +267,7 @@ public class Mail {
      */
     public static boolean send(String smtp, String from, String to,
             String subject, String content, String username, String password) {
-        Mail theMail = new Mail(smtp);
+        MailSendingTest theMail = new MailSendingTest(smtp);
         theMail.setNeedAuth(true); // �?��验证
  
         if (!theMail.setSubject(subject))
@@ -301,7 +301,7 @@ public class Mail {
     public static boolean sendAndCc(String smtp, String from, String to,
             String copyto, String subject, String content, String username,
             String password) {
-        Mail theMail = new Mail(smtp);
+        MailSendingTest theMail = new MailSendingTest(smtp);
         theMail.setNeedAuth(true); // �?��验证
  
         if (!theMail.setSubject(subject))
@@ -338,7 +338,7 @@ public class Mail {
     public static boolean send(String smtp, String from, String to,
             String subject, String content, String username, String password,
             String filename) {
-        Mail theMail = new Mail(smtp);
+        MailSendingTest theMail = new MailSendingTest(smtp);
         theMail.setNeedAuth(true); // �?��验证
  
         if (!theMail.setSubject(subject))
@@ -375,7 +375,7 @@ public class Mail {
     public static boolean sendAndCc(String smtp, String from, String to,
             String copyto, String subject, String content, String username,
             String password, String filename) {
-        Mail theMail = new Mail(smtp);
+        MailSendingTest theMail = new MailSendingTest(smtp);
         theMail.setNeedAuth(true); // �?��验证
  
         if (!theMail.setSubject(subject))
@@ -407,7 +407,7 @@ public class Mail {
         String content = "钊生�?94SB";
         String username = "fancanhuade@126.com";
         String password = "ekhbeqxyjrfxbnck";
-        Mail.send(smtp, from, to, subject, content, username, password);
+        MailSendingTest.send(smtp, from, to, subject, content, username, password);
 //        Throwable t=new Throwable();
 //        StackTraceElement[] frames=t.getStackTrace();
 //        for(StackTraceElement frame :frames){
