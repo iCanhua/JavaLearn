@@ -2,6 +2,7 @@ package com.scut.fan.Example;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.Date;
 import java.util.Properties;
 
 import com.scut.fan.JavaMail.AbstractEmailTemplate;
@@ -107,6 +108,8 @@ public class AccountActivateExample extends AbstractEmailTemplate{
 		}
 		return strBuf.toString();
 	}
+
+	
 
 	
 }
