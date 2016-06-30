@@ -87,6 +87,8 @@ public class ConsumerProducer_Condition {
 							System.out.println("队列满，等待有空余空间");
 							notFull.await();
 						} catch (Exception e) {
+							
+							
 							 e.printStackTrace();
 						}
 					}

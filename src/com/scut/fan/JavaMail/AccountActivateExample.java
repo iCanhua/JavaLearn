@@ -33,8 +33,9 @@ public class AccountActivateExample extends AbstractEmailTemplate{
 	}
 	public static void main(String[] args) throws Exception {
 		AccountActivateExample example=new AccountActivateExample();
-
+	
 		example.sendEmail();
+		
 		
 	}
 	
